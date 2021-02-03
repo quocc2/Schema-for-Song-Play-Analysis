@@ -14,7 +14,7 @@ This project is to build a PostgreSQL data base which utilizes the data of user'
 ## Database Structure:
 
 Database build by optimizing tables around efficient reads that will serve complex queries.
-To achieve this task, a **START** schema is used with dimensional modeling to take advantages of its usage: Denormalized tables, Simplied queries, and fast for aggregation.
+To achieve this task, a **STAR** schema is used with dimensional modeling to take advantages of its usage: Denormalized tables, Simplied queries, and fast for aggregation.
 
 -Song plays as fact table.
 -Songs, artist, uers, and time are dimentions tables.
