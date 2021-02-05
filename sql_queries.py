@@ -66,7 +66,7 @@ artist_table_create = ("""
 
 time_table_create = ("""
     CREATE TABLE IF NOT EXISTS time
-    (start_time timestamp PRIMARY KEY,
+    (start_time date PRIMARY KEY,
      hour int, 
      day int, 
      week int, 
@@ -93,7 +93,7 @@ user_table_insert = ("""
 
 song_table_insert = ("""
     INSERT INTO songs(song_id, title, artist_id, year, duration) 
-    VALUES(%s, %s, %s, %s, %s)
+    VALUES(%s, %s, %s, %s, %s) 
     ON CONFLICT(song_id) DO NOTHING;
 """)
 
